@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="isSidenavOpen = true" class="menu-button">
+      <mat-icon>menu</mat-icon>
+    </button>
+  
+    <span class="logo">Task Manager</span>
+  
+    <span class="spacer"></span>
+  
+    <!-- Desktop Navigation -->
+    <div class="nav-links">
+      <a mat-button routerLink="/">Home</a>
+      <a mat-button routerLink="/login">Login</a>
+      <a mat-button routerLink="/signup">Sign Up</a>
+    </div>
+  </mat-toolbar>
+  
+  <!-- Sidebar for Mobile Navigation -->
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" [(opened)]="isSidenavOpen">
+      <mat-nav-list>
+        <a mat-list-item routerLink="/" (click)="isSidenavOpen = false">Home</a>
+        <a mat-list-item routerLink="/login" (click)="isSidenavOpen = false">Login</a>
+        <a mat-list-item routerLink="/signup" (click)="isSidenavOpen = false">Sign Up</a>
+      </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+  

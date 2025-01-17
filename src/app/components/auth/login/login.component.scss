@@ -1,0 +1,100 @@
+// White Background for the Whole Page
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff;
+  }
+  
+  // Centered Card with Soft Shadow
+  .auth-card {
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .auth-card:hover {
+    transform: scale(1.02);
+  }
+  
+  // Title & Subtitle
+  .form-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  // Form Fields (White Input & Black Text)
+  .full-width {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+  }
+  
+  mat-form-field input {
+    color: black;
+    background: white;
+  }
+  
+  mat-label {
+    color: black;
+  }
+  
+  mat-form-field .mat-mdc-floating-label {
+    color: black !important;
+  }
+  
+  .mat-mdc-form-field.mat-mdc-form-field-type-mat-input {
+    background: white;
+    border-radius: 5px;
+  }
+  
+  // Login Button (Blue Gradient)
+  .login-btn {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 25px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #3f51b5, #1a237e);
+    color: white;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .login-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  // Sign Up Link
+  .switch-auth {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .switch-auth a {
+    color: #3f51b5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .switch-auth a:hover {
+    color: #1a237e;
+  }
+  

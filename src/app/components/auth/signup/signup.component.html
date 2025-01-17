@@ -1,0 +1,32 @@
+<div class="auth-container">
+    <mat-card class="auth-card">
+      <h2 class="form-title">Create Account</h2>
+      <p class="subtitle">Join us and boost your productivity.</p>
+  
+      <form (submit)="onSignup()">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Name</mat-label>
+          <input matInput type="text" [(ngModel)]="signupData.name" name="name" required>
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" [(ngModel)]="signupData.email" name="email" required>
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" [(ngModel)]="signupData.password" name="password" required>
+        </mat-form-field>
+  
+        <button mat-raised-button color="primary" class="full-width signup-btn">
+          Sign Up
+        </button>
+  
+        <p class="switch-auth">Already have an account? 
+          <a routerLink="/login">Login</a>
+        </p>
+      </form>
+    </mat-card>
+  </div>
+  

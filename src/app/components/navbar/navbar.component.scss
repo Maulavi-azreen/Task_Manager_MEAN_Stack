@@ -1,0 +1,46 @@
+mat-toolbar {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .spacer {
+    flex: 1;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Hide Menu Button on Large Screens */
+  .menu-button {
+    display: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+  }
+  
+  .sidenav-container {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .sidenav-container {
+      display: block;
+    }
+  }
+  
